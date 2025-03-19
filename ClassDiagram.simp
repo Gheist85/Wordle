@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.80" multi-file="no" uid="simp6a51181f9ed34341aaa847b035f151a4">
+  <meta>
+    <name>ClassDiagram</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>8</value>
+      </counter>
+      <counter>
+        <item-type stereotype="enumeration" type-id="enumeration" type="Enumeration" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>335</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>9</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>42</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>11</value>
+      </counter>
+      <counter>
+        <item-type type-id="enumeration" type="Enumeration" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>9</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.EnumerationItemField</type>
+        <value>4</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-12a4a773e3d14006b8d7d5c26efd86fd" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-98bd70ae5c5d4ca1b280cd6e60f7726d" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="Class:cb1f2d8ae1f4444c97e10d152cd1dc88" name="WordleSession" class-ref="cb1f2d8ae1f4444c97e10d152cd1dc88" />
+        <type id="void" name="void" />
+        <type id="ListofMatchPair" name="ListofMatchPair" />
+        <type id="Class:f6530fd26ccf4c9894b634931c7fb0ca" name="MatchPair" class-ref="f6530fd26ccf4c9894b634931c7fb0ca" />
+        <type id="Class:e4a2d7d6de52483eb6e65a9da8466007" name="Wordlematch" class-ref="e4a2d7d6de52483eb6e65a9da8466007" />
+        <type id="List_" name="List" base-ref="List" />
+        <type id="Class:07b6600eaf684406a9c12a774ad26fba" name="Wordlist" class-ref="07b6600eaf684406a9c12a774ad26fba" />
+        <type id="List" name="List" />
+        <type id="string" name="string" />
+        <type id="Class:d7f4c9d071c346f08a313e76ab3d99ce" name="WordleLogic" class-ref="d7f4c9d071c346f08a313e76ab3d99ce" />
+        <type id="List__" name="List" base-ref="List_" />
+        <type id="Class:9a8eb0aa927f411caaf67f2a8dab5739" name="Class5" class-ref="9a8eb0aa927f411caaf67f2a8dab5739" />
+        <type id="Class:5003e58431a24e36879725e45e583464" name="InputStringGetter" class-ref="5003e58431a24e36879725e45e583464" />
+      </types>
+    </custom-types>
+  </types>
+  <items>
+    <item id="5d8e665a55af43e9a521a4077ba52198" cid="PROP041" type="property" owner="e3f219931add49f19c1996b043189dfb" creator="" creation-date="03/18/2025 15:18:53" visibility="private" />
+    <item id="48bb2e3b50b146fcaa9aef2395ac0a28" cid="PROP033" type="property" owner="247757c37beb483db7d817739dbc6d02" creator="" creation-date="03/18/2025 15:04:06" visibility="private">
+      <structural-feature type="WordleLogic" type-id="Class:d7f4c9d071c346f08a313e76ab3d99ce" />
+    </item>
+    <item id="614f07e973ea41e49c7f6d8813c9f1de" cid="PROP006" type="property" owner="22d0809000944e5ab88f55bf44ed8bb0" creator="" creation-date="03/18/2025 14:12:38" visibility="private">
+      <structural-feature type="WordleSession" type-id="Class:cb1f2d8ae1f4444c97e10d152cd1dc88" />
+      <property aggregation="shared" />
+    </item>
+    <item id="8e0ce521926644d9809357d75d557939" cid="PROP007" type="property" owner="22d0809000944e5ab88f55bf44ed8bb0" creator="" creation-date="03/18/2025 14:12:38" visibility="private">
+      <structural-feature type="Wordlist" type-id="Class:07b6600eaf684406a9c12a774ad26fba" />
+    </item>
+    <item id="4659c4821a394add87d8d05b182384ef" cid="PROP016" type="property" owner="dea8ff3f6c6a4e359441b92a9f14f7e2" creator="" creation-date="03/18/2025 14:23:21" visibility="private">
+      <structural-feature type="WordleLogic" type-id="Class:d7f4c9d071c346f08a313e76ab3d99ce" />
+      <property aggregation="shared" />
+    </item>
+    <item id="ad5d3aae20244ac78f7e69c731f5f2ae" cid="PROP038" type="property" owner="189bd6c53e6f4007ac3ef3c2295a7323" creator="" creation-date="03/18/2025 15:13:18" visibility="private">
+      <structural-feature type="WordleLogic" type-id="Class:d7f4c9d071c346f08a313e76ab3d99ce" />
+      <property aggregation="shared" />
+    </item>
+    <item id="41dae0a079f94f3eba3df3f747d55c5b" cid="PROP032" type="property" owner="247757c37beb483db7d817739dbc6d02" creator="" creation-date="03/18/2025 15:04:06" visibility="private">
+      <structural-feature type="MatchPair" type-id="Class:f6530fd26ccf4c9894b634931c7fb0ca" />
+      <property aggregation="shared" />
+    </item>
+    <item id="63ff85eeddae4ebfb432bd2379143c6f" cid="PROP017" type="property" owner="dea8ff3f6c6a4e359441b92a9f14f7e2" creator="" creation-date="03/18/2025 14:23:21" visibility="private">
+      <structural-feature type="InputStringGetter" type-id="Class:5003e58431a24e36879725e45e583464" />
+    </item>
+    <item id="365ffdb99dd64782b9b2df818277139b" cid="PROP040" type="property" owner="e3f219931add49f19c1996b043189dfb" creator="" creation-date="03/18/2025 15:18:53" visibility="private">
+      <structural-feature type="MatchPair" type-id="Class:f6530fd26ccf4c9894b634931c7fb0ca" />
+      <property aggregation="shared" />
+    </item>
+    <item id="56e532d8f7594ac78870bc0f5ccd307e" cid="PROP039" type="property" owner="189bd6c53e6f4007ac3ef3c2295a7323" creator="" creation-date="03/18/2025 15:13:18" visibility="private">
+      <structural-feature type="WordleSession" type-id="Class:cb1f2d8ae1f4444c97e10d152cd1dc88" />
+    </item>
+  </items>
+  <models>
+    <model id="p93938db9cd3a41209c5615ecacde0b3f_212273947" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>03/18/2025 13:55:20</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p23186074089f4968acdd6f7d4576e485_770672301" name="ClassDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,-100">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>03/18/2025 13:55:20</creation-date>
+          <change-date>03/18/2025 15:18:53</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="9b241bf81a1b47e29dcff0edd43f1a49" cid="PROP031" type="property" name="NewAttribute1" owner="ca00564f0cd241e5b01114b00f518eca" creator="" creation-date="03/18/2025 15:01:34" visibility="public" />
+          <item id="ee284511cf614f3e808dac70549b615c" cid="PROP030" type="property" name="result" owner="f6530fd26ccf4c9894b634931c7fb0ca" creator="" creation-date="03/18/2025 15:00:00" visibility="public">
+            <structural-feature multiplicity="*" type="Wordlematch" type-id="Class:e4a2d7d6de52483eb6e65a9da8466007" />
+          </item>
+          <item id="fcd1f82a9828401ab830ddbee456f208" cid="PROP022" type="property" name="CurrentWord" owner="d7f4c9d071c346f08a313e76ab3d99ce" creator="" creation-date="03/18/2025 14:25:40" visibility="public">
+            <structural-feature type="string" type-id="string" />
+          </item>
+          <item id="07b6600eaf684406a9c12a774ad26fba" cid="C001" type="class" name="Wordlist" creator="" creation-date="03/18/2025 13:56:09">
+            <owned-items />
+            <attributes>
+              <attribute id="aafabb586ef3c43c082ae6196c92d2213586" cid="PROP001" name="Words" creation-date="03/18/2025 14:00:51" property-ref="17579d83b9164d4abbde0a201f6ea80f" />
+              <attribute id="aa4b816a0cddd4b5d900477a69819e736956" cid="PROP028" name="ReadWordsFromAPI" creation-date="03/18/2025 14:58:37" property-ref="88142e6c40144c0d8cc1560b0bf91777" />
+            </attributes>
+            <operations>
+              <operation id="o81f12271f1b34dea9a1a539615d108e2867" cid="OP001" name="ReadWordListFromFile" creation-date="03/18/2025 14:03:09" type="void" type-id="void" visibility="public">
+                <parameters>
+                  <parameter id="p0adc7016096841ddaef4c50687456c08" name="string" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="026e970e986d4ed38d7dcdbf418b086b" cid="PROP003" type="property" name="Words" owner="cb1f2d8ae1f4444c97e10d152cd1dc88" creator="" creation-date="03/18/2025 14:06:47" visibility="public">
+            <structural-feature type="Wordlist" type-id="Class:07b6600eaf684406a9c12a774ad26fba" />
+          </item>
+          <item id="d479462a68cc47d4bf4ef102372dca64" cid="PROP025" type="property" name="CurrentTry" owner="d7f4c9d071c346f08a313e76ab3d99ce" creator="" creation-date="03/18/2025 14:51:53" visibility="public">
+            <structural-feature type="ListofMatchPair" type-id="ListofMatchPair" />
+          </item>
+          <item id="e4a2d7d6de52483eb6e65a9da8466007" cid="E001" type="enumeration" name="Wordlematch" creator="" creation-date="03/18/2025 14:46:06">
+            <stereotypes>
+              <stereotype name="enumeration" />
+            </stereotypes>
+            <stereotype-instances>
+              <stereotype id="e4a2d7d6de52483eb6e65a9da8466007_enumeration_c" type="enumeration" ref="" />
+            </stereotype-instances>
+            <enumeration-items>
+              <enumeration-item id="ab38c397915554a55b04768f556a29bc2584" cid="ENI001" name="1: NotInWord" creation-date="03/18/2025 14:46:40" />
+              <enumeration-item id="a74790f74ffc84b548540eb780b62f4e8118" cid="ENI002" name="2: PartOfWordWrongIndex" creation-date="03/18/2025 14:50:00" />
+              <enumeration-item id="a5acb3e6fbab2444ea1c1db40e4a434b7836" cid="ENI003" name="3:PartOfWordCorrectIndex" creation-date="03/18/2025 14:50:17" />
+            </enumeration-items>
+          </item>
+          <item id="6268451d87bd447482616cd7b7f16113" cid="PROP005" type="property" name="FailedWords" owner="cb1f2d8ae1f4444c97e10d152cd1dc88" creator="" creation-date="03/18/2025 14:10:40" visibility="public">
+            <structural-feature type="Wordlist" type-id="Class:07b6600eaf684406a9c12a774ad26fba" />
+          </item>
+          <item id="22d0809000944e5ab88f55bf44ed8bb0" cid="REL001" type="relationship" creator="" creation-date="03/18/2025 14:12:38" from="cb1f2d8ae1f4444c97e10d152cd1dc88" to="07b6600eaf684406a9c12a774ad26fba" visibility="package">
+            <owned-items />
+            <relation from="cb1f2d8ae1f4444c97e10d152cd1dc88" to="07b6600eaf684406a9c12a774ad26fba" derived="false">
+              <start-role id="umlar-96668640-4b0f-46bf-8648-85c0f892842f" name="" navigability="" association-type="aggregation" visibility="private" property-ref="614f07e973ea41e49c7f6d8813c9f1de" />
+              <end-role id="umlar-292e3611-abfe-4aa1-a20b-8f01ee334cbf" name="" navigability="" association-type="association" visibility="private" property-ref="8e0ce521926644d9809357d75d557939" />
+            </relation>
+          </item>
+          <item id="0af0a9e7c2d74d48bd40273d9f397f6b" cid="PROP013" type="property" name="InputGetter" owner="d7f4c9d071c346f08a313e76ab3d99ce" creator="" creation-date="03/18/2025 14:22:45" visibility="public">
+            <structural-feature type="InputStringGetter" type-id="Class:5003e58431a24e36879725e45e583464" />
+          </item>
+          <item id="4ef0199258ab46afbe98db5039d91101" cid="PROP029" type="property" name="input" owner="f6530fd26ccf4c9894b634931c7fb0ca" creator="" creation-date="03/18/2025 14:59:37" visibility="public">
+            <structural-feature type="string" type-id="string" />
+          </item>
+          <item id="6b7360bf139d489bb1847fd0fa9952a9" cid="PROP004" type="property" name="SolvedWords" owner="cb1f2d8ae1f4444c97e10d152cd1dc88" creator="" creation-date="03/18/2025 14:09:27" visibility="public">
+            <structural-feature type="Wordlist" type-id="Class:07b6600eaf684406a9c12a774ad26fba" />
+          </item>
+          <item id="5003e58431a24e36879725e45e583464" cid="C004" type="class" name="InputStringGetter" creator="" creation-date="03/18/2025 13:56:16">
+            <owned-items />
+            <attributes>
+              <attribute id="a4bb203e15d1d4a9b849c2599dfa9314c289" cid="PROP036" name="string" creation-date="03/18/2025 15:07:18" property-ref="11da3ee3b6af4819b0e821039c1341ac" />
+              <attribute id="ac91e0a1ad34d4affa8a744e6b6b64c64843" cid="PROP037" name="MaximumLength" creation-date="03/18/2025 15:11:16" property-ref="a3bab879ebc84c5c94761cf5fa15adf3" />
+            </attributes>
+            <operations>
+              <operation id="o5595931a46bd435da12344a5e86fc249899" cid="OP008" name="GetString" creation-date="03/18/2025 15:07:24" type="string" type-id="string" visibility="public" />
+            </operations>
+          </item>
+          <item id="cb1f2d8ae1f4444c97e10d152cd1dc88" cid="C002" type="class" name="WordleSession" creator="" creation-date="03/18/2025 13:56:10">
+            <owned-items />
+            <attributes>
+              <attribute id="a37595ec5b317467db9b99f352cc85abc921" cid="PROP002" name="PlayerName" creation-date="03/18/2025 14:05:29" property-ref="a488db6ea42b4001b615248c5b80dd68" />
+              <attribute id="ad824a0c489cc4d9a95087ca5112e0f2c927" cid="PROP003" name="Words" creation-date="03/18/2025 14:06:47" property-ref="026e970e986d4ed38d7dcdbf418b086b" />
+              <attribute id="a807bdb286fc94d9fa1840f5e29b988d4128" cid="PROP004" name="SolvedWords" creation-date="03/18/2025 14:09:27" property-ref="6b7360bf139d489bb1847fd0fa9952a9" />
+              <attribute id="a7adbfbb030c540729338195b47d132b0249" cid="PROP005" name="FailedWords" creation-date="03/18/2025 14:10:40" property-ref="6268451d87bd447482616cd7b7f16113" />
+              <attribute id="ac037be7b594f4be8bf511aa032e0f490955" cid="PROP034" name="difficulty" creation-date="03/18/2025 15:05:59" property-ref="e34a539d603646de9366632a721e9858" />
+              <attribute id="a01d95b08f1ae42159f4dbe08af2f2c92549" cid="PROP035" name="Wordlength" creation-date="03/18/2025 15:06:47" property-ref="76022f3eb0874eaea4ff7e76afe80c4d" />
+            </attributes>
+            <operations>
+              <operation id="o5a228252365f418ea5817f621d775d9150" cid="OP002" name="WordleSession" creation-date="03/18/2025 14:12:04" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p01b668f4504a4dad9f92df63d63311cb" name="playerName" type="String" type-id="Uml.String">
+                    <tagged-values>
+                      <tagged-value id="tv4a0ece8c357f42f2abaa4b71b12b31d7" name="set_playerName" type="reference" multiple="false" hidden="false" ref="a488db6ea42b4001b615248c5b80dd68" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o520f4539f6654bdd8c32952b6ff37e8c38" cid="OP003" name="SaveWordleSession" creation-date="03/18/2025 14:13:13" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pb07aedd55b454986a539506fe75f791a" name="path" type="string" type-id="string" />
+                </parameters>
+              </operation>
+              <operation id="oea5061830ec44cd485eac99f2fac4471675" cid="OP007" name="SetDifficulty" creation-date="03/18/2025 14:58:10" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="d7f4c9d071c346f08a313e76ab3d99ce" cid="C003" type="class" name="WordleLogic" creator="" creation-date="03/18/2025 13:56:12">
+            <owned-items />
+            <attributes>
+              <attribute id="af06b987ee1ba42e08202c95979ec895e242" cid="PROP008" name="Source" creation-date="03/18/2025 14:18:03" property-ref="53823870793941009d3fed32faf0b9f6" />
+              <attribute id="a43672368334e4ea185291d2e48622749753" cid="PROP013" name="InputGetter" creation-date="03/18/2025 14:22:45" property-ref="0af0a9e7c2d74d48bd40273d9f397f6b" />
+              <attribute id="a2f4e69888a674e72878754ea3f8321e4544" cid="PROP022" name="CurrentWord" creation-date="03/18/2025 14:25:40" property-ref="fcd1f82a9828401ab830ddbee456f208" />
+              <attribute id="a4a71033240164992a331a4bf775d722e994" cid="PROP025" name="CurrentTry" creation-date="03/18/2025 14:51:53" property-ref="d479462a68cc47d4bf4ef102372dca64" />
+            </attributes>
+            <operations>
+              <operation id="o0d5f3daf15844c8f800889d32d70bc8b246" cid="OP006" name="WordleLogic" creation-date="03/18/2025 14:26:32" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="p6a9f9634c21840a69b3a7689a1158f56" name="source" type="WordleSession" type-id="Class:cb1f2d8ae1f4444c97e10d152cd1dc88">
+                    <tagged-values>
+                      <tagged-value id="tv8ec1c65fb16142ce9983f05e79e97353" name="set_source" type="reference" multiple="false" hidden="false" ref="53823870793941009d3fed32faf0b9f6" />
+                    </tagged-values>
+                  </parameter>
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="ob68e32527e514b8f9127d54df7a19288131" cid="OP004" name="PickWordFromList" creation-date="03/18/2025 14:20:07" type="" type-id="" visibility="public" />
+              <operation id="o8d78d9bd0b93400898317eaa4063aec5653" cid="OP005" name="CompareWordToInput" creation-date="03/18/2025 14:22:16" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="247757c37beb483db7d817739dbc6d02" cid="REL008" type="relationship" creator="" creation-date="03/18/2025 15:04:06" from="f6530fd26ccf4c9894b634931c7fb0ca" to="d7f4c9d071c346f08a313e76ab3d99ce" visibility="package">
+            <owned-items />
+            <relation from="f6530fd26ccf4c9894b634931c7fb0ca" to="d7f4c9d071c346f08a313e76ab3d99ce" derived="false">
+              <start-role id="umlar-29448910-af9a-4e43-97ad-2c902a979d40" name="" navigability="" association-type="aggregation" visibility="private" property-ref="41dae0a079f94f3eba3df3f747d55c5b" />
+              <end-role id="umlar-0d829e3a-fa8f-44df-a806-e84e3bfb97f7" name="" navigability="" association-type="association" visibility="private" property-ref="48bb2e3b50b146fcaa9aef2395ac0a28" />
+            </relation>
+          </item>
+          <item id="189bd6c53e6f4007ac3ef3c2295a7323" cid="REL009" type="relationship" creator="" creation-date="03/18/2025 15:13:18" from="d7f4c9d071c346f08a313e76ab3d99ce" to="cb1f2d8ae1f4444c97e10d152cd1dc88" visibility="package">
+            <owned-items />
+            <relation from="d7f4c9d071c346f08a313e76ab3d99ce" to="cb1f2d8ae1f4444c97e10d152cd1dc88" derived="false">
+              <start-role id="umlar-b9203de1-663c-4d61-98ea-fd2b9fe025d8" name="" navigability="" association-type="aggregation" visibility="private" property-ref="ad5d3aae20244ac78f7e69c731f5f2ae" />
+              <end-role id="umlar-20de4cbb-04b8-4cd1-bd06-37be441b8f29" name="" navigability="" association-type="association" visibility="private" property-ref="56e532d8f7594ac78870bc0f5ccd307e" />
+            </relation>
+          </item>
+          <item id="a488db6ea42b4001b615248c5b80dd68" cid="PROP002" type="property" name="PlayerName" owner="cb1f2d8ae1f4444c97e10d152cd1dc88" creator="" creation-date="03/18/2025 14:05:29" visibility="public">
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="e34a539d603646de9366632a721e9858" cid="PROP034" type="property" name="difficulty" owner="cb1f2d8ae1f4444c97e10d152cd1dc88" creator="" creation-date="03/18/2025 15:05:59" visibility="public">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="f6530fd26ccf4c9894b634931c7fb0ca" cid="C006" type="class" name="MatchPair" creator="" creation-date="03/18/2025 14:57:31">
+            <owned-items />
+            <attributes>
+              <attribute id="a933f91005d5d430b8c6421232691cd9a779" cid="PROP029" name="input" creation-date="03/18/2025 14:59:37" property-ref="4ef0199258ab46afbe98db5039d91101" />
+              <attribute id="aed9a3b863af945bdbd12f47ab272f08038" cid="PROP030" name="result" creation-date="03/18/2025 15:00:00" property-ref="ee284511cf614f3e808dac70549b615c" />
+            </attributes>
+          </item>
+          <item id="a3bab879ebc84c5c94761cf5fa15adf3" cid="PROP037" type="property" name="MaximumLength" owner="5003e58431a24e36879725e45e583464" creator="" creation-date="03/18/2025 15:11:16" visibility="public">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="3bcaec8a87de42acbbbc602227f9c3b0" cid="C007" type="class" name="ConsoleOutputFormatter" creator="" creation-date="03/18/2025 15:00:57" />
+          <item id="dea8ff3f6c6a4e359441b92a9f14f7e2" cid="REL003" type="relationship" creator="" creation-date="03/18/2025 14:23:21" from="d7f4c9d071c346f08a313e76ab3d99ce" to="5003e58431a24e36879725e45e583464" visibility="package">
+            <owned-items />
+            <relation from="d7f4c9d071c346f08a313e76ab3d99ce" to="5003e58431a24e36879725e45e583464" derived="false">
+              <start-role id="umlar-565aab5c-eec4-4010-82e7-2274dc674751" name="" navigability="" association-type="aggregation" visibility="private" property-ref="4659c4821a394add87d8d05b182384ef" />
+              <end-role id="umlar-9d6a833c-6bb3-40fc-892c-8b5f7f7330ba" name="" navigability="" association-type="association" visibility="private" property-ref="63ff85eeddae4ebfb432bd2379143c6f" />
+            </relation>
+          </item>
+          <item id="53823870793941009d3fed32faf0b9f6" cid="PROP008" type="property" name="Source" owner="d7f4c9d071c346f08a313e76ab3d99ce" creator="" creation-date="03/18/2025 14:18:03" visibility="public">
+            <structural-feature type="WordleSession" type-id="Class:cb1f2d8ae1f4444c97e10d152cd1dc88" />
+          </item>
+          <item id="11da3ee3b6af4819b0e821039c1341ac" cid="PROP036" type="property" name="string" owner="5003e58431a24e36879725e45e583464" creator="" creation-date="03/18/2025 15:07:18" visibility="public">
+            <structural-feature type="string" type-id="string" />
+          </item>
+          <item id="17579d83b9164d4abbde0a201f6ea80f" cid="PROP001" type="property" name="Words" owner="07b6600eaf684406a9c12a774ad26fba" creator="" creation-date="03/18/2025 14:00:51" visibility="undefined">
+            <structural-feature type="List" type-id="List" />
+          </item>
+          <item id="e3f219931add49f19c1996b043189dfb" cid="REL010" type="relationship" creator="" creation-date="03/18/2025 15:18:53" from="f6530fd26ccf4c9894b634931c7fb0ca" to="e4a2d7d6de52483eb6e65a9da8466007" visibility="package">
+            <owned-items />
+            <relation from="f6530fd26ccf4c9894b634931c7fb0ca" to="e4a2d7d6de52483eb6e65a9da8466007" derived="false">
+              <start-role id="umlar-eb46a2ba-652e-47de-9f8c-0912d542b627" name="" navigability="" association-type="aggregation" visibility="private" property-ref="365ffdb99dd64782b9b2df818277139b" />
+              <end-role id="umlar-60f1ee70-e7d0-420b-a35c-cf5fa486b127" name="" navigability="" association-type="association" visibility="private" property-ref="5d8e665a55af43e9a521a4077ba52198" />
+            </relation>
+          </item>
+          <item id="76022f3eb0874eaea4ff7e76afe80c4d" cid="PROP035" type="property" name="Wordlength" owner="cb1f2d8ae1f4444c97e10d152cd1dc88" creator="" creation-date="03/18/2025 15:06:47" visibility="public">
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+          </item>
+          <item id="ca00564f0cd241e5b01114b00f518eca" cid="C008" type="class" name="WPFOutputFormatter" creator="" creation-date="03/18/2025 15:01:20">
+            <owned-items />
+            <attributes>
+              <attribute id="a0a432fecaee540c7b70e32c3b562d309394" cid="PROP031" name="NewAttribute1" creation-date="03/18/2025 15:01:34" property-ref="9b241bf81a1b47e29dcff0edd43f1a49" />
+            </attributes>
+          </item>
+          <item id="88142e6c40144c0d8cc1560b0bf91777" cid="PROP028" type="property" name="ReadWordsFromAPI" owner="07b6600eaf684406a9c12a774ad26fba" creator="" creation-date="03/18/2025 14:58:37" visibility="public" />
+        </abstract-items>
+        <layer id="53a408756415488c9a761aa25cb0c818" name="Default" visible="true" enabled="true" locked="false">
+          <item id="07b6600eaf684406a9c12a774ad26fba" iid="205342709ef2476a8a03925237db9267" show-fields="true" creation-date="03/18/2025 13:56:09" order-index="0" type="entity">
+            <layout ax="150" ay="210" awidth="260" aheight="130" x="150" y="210" width="260" height="130" rotation-center="-60,15" />
+            <classifier />
+            <class />
+          </item>
+          <item id="cb1f2d8ae1f4444c97e10d152cd1dc88" iid="de1c162b2eba48c08d1f82627ff331f9" show-fields="true" creation-date="03/18/2025 13:56:10" order-index="1" type="entity">
+            <layout ax="500" ay="150" awidth="190" aheight="250" x="503" y="155" width="190" height="250" rotation-center="-25,-45" />
+            <classifier />
+            <class />
+          </item>
+          <item id="d7f4c9d071c346f08a313e76ab3d99ce" iid="4b76d62852994c4dbac73359129bf42c" show-fields="true" creation-date="03/18/2025 13:56:12" order-index="2" type="entity">
+            <layout ax="780" ay="150" awidth="240" aheight="260" x="780" y="150" width="240" height="260" rotation-center="-50,-50" />
+            <classifier />
+            <class />
+          </item>
+          <item id="5003e58431a24e36879725e45e583464" iid="f666c323d6124f078cdffb4386c29a15" show-fields="true" creation-date="03/18/2025 13:56:16" order-index="3" type="entity">
+            <layout ax="1080" ay="90" awidth="180" aheight="190" x="1080" y="90" width="180" height="190" rotation-center="-20,-75" />
+            <classifier />
+            <class />
+          </item>
+          <item id="22d0809000944e5ab88f55bf44ed8bb0" iid="fb33e3492dbb4d0fa6fb850c0034a0a3" creation-date="03/18/2025 14:12:38" order-index="4" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="500" y1="275" x2="410" y2="275" start-border-pos="0.875" end-border-pos="0.375" start-local-pos="125" end-local-pos="65" name-position="0,20">
+              <points>
+                <point x="500" y="275" />
+                <point x="410" y="275" />
+              </points>
+            </layout>
+            <relation from="cb1f2d8ae1f4444c97e10d152cd1dc88" from-iid="de1c162b2eba48c08d1f82627ff331f9" to="07b6600eaf684406a9c12a774ad26fba" to-iid="205342709ef2476a8a03925237db9267" />
+          </item>
+          <item id="dea8ff3f6c6a4e359441b92a9f14f7e2" iid="e572347001d94bb39d373ba8edbe79c1" creation-date="03/18/2025 14:23:21" order-index="5" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1020" y1="280" x2="1080" y2="185" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="125" end-local-pos="125" name-position="0,20">
+              <points>
+                <point x="1020" y="280" />
+                <point x="1080" y="185" />
+              </points>
+            </layout>
+            <relation from="d7f4c9d071c346f08a313e76ab3d99ce" from-iid="4b76d62852994c4dbac73359129bf42c" to="5003e58431a24e36879725e45e583464" to-iid="f666c323d6124f078cdffb4386c29a15" />
+          </item>
+          <item id="e4a2d7d6de52483eb6e65a9da8466007" iid="ad13ef5fb7c7435093df7a2bca6f8799" creation-date="03/18/2025 14:46:06" order-index="7" type="entity">
+            <layout ax="1320" ay="360" awidth="140" aheight="160" x="1320" y="360" width="140" height="160" />
+          </item>
+          <item id="f6530fd26ccf4c9894b634931c7fb0ca" iid="2b017625536d43fcb8e7271f3647ed24" show-fields="true" creation-date="03/18/2025 14:57:31" order-index="9" type="entity">
+            <layout ax="1080" ay="370" awidth="180" aheight="120" x="1080" y="370" width="180" height="120" rotation-center="-20,20" />
+            <classifier />
+            <class />
+          </item>
+          <item id="3bcaec8a87de42acbbbc602227f9c3b0" iid="889be4b06c814e2a9078333b11048bf3" show-fields="true" creation-date="03/18/2025 15:00:57" order-index="10" type="entity">
+            <layout ax="940" ay="550" awidth="190" aheight="190" x="940" y="550" width="190" height="190" rotation-center="-25,-15" />
+            <classifier />
+            <class />
+          </item>
+          <item id="ca00564f0cd241e5b01114b00f518eca" iid="c48de166464d4570af954b13572b8bf5" show-fields="true" creation-date="03/18/2025 15:01:20" order-index="11" type="entity">
+            <layout ax="680" ay="550" awidth="180" aheight="190" x="680" y="550" width="180" height="190" rotation-center="-20,-35" />
+            <classifier />
+            <class />
+          </item>
+          <item id="247757c37beb483db7d817739dbc6d02" iid="8b281622a0da46d78d66a39d1ddf4fbe" creation-date="03/18/2025 15:04:06" order-index="12" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1080" y1="430" x2="1020" y2="320" start-border-pos="0.875" end-border-pos="0.413461538461538" start-local-pos="60" end-local-pos="170" name-position="0,20">
+              <points>
+                <point x="1080" y="430" />
+                <point x="1020" y="320" />
+              </points>
+            </layout>
+            <relation from="f6530fd26ccf4c9894b634931c7fb0ca" from-iid="2b017625536d43fcb8e7271f3647ed24" to="d7f4c9d071c346f08a313e76ab3d99ce" to-iid="4b76d62852994c4dbac73359129bf42c" />
+          </item>
+          <item id="189bd6c53e6f4007ac3ef3c2295a7323" iid="cf063d9e11ce4708b68094d4efb94d05" creation-date="03/18/2025 15:13:18" order-index="13" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="780" y1="280" x2="690" y2="280" start-border-pos="0.875" end-border-pos="0.38" start-local-pos="130" end-local-pos="130" name-position="0,20">
+              <points>
+                <point x="780" y="280" />
+                <point x="690" y="280" />
+              </points>
+            </layout>
+            <relation from="d7f4c9d071c346f08a313e76ab3d99ce" from-iid="4b76d62852994c4dbac73359129bf42c" to="cb1f2d8ae1f4444c97e10d152cd1dc88" to-iid="de1c162b2eba48c08d1f82627ff331f9" />
+          </item>
+          <item id="e3f219931add49f19c1996b043189dfb" iid="03ecb3877ffd45789f423d3d74c0b660" creation-date="03/18/2025 15:18:53" order-index="14" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1260" y1="440" x2="1320" y2="440" start-border-pos="0.395833333333333" end-border-pos="0.875" start-local-pos="70" end-local-pos="80" name-position="0,20">
+              <points>
+                <point x="1260" y="440" />
+                <point x="1320" y="440" />
+              </points>
+            </layout>
+            <relation from="f6530fd26ccf4c9894b634931c7fb0ca" from-iid="2b017625536d43fcb8e7271f3647ed24" to="e4a2d7d6de52483eb6e65a9da8466007" to-iid="ad13ef5fb7c7435093df7a2bca6f8799" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

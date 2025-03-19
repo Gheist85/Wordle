@@ -16,7 +16,7 @@ namespace Wordle.Classes
         {
             Words = new List<String>();
             Path = "data\\words.txt";
-            ReadListFromFile();
+           
         }
 
         // Constructor that uses a CustomPath to the File
@@ -36,7 +36,7 @@ namespace Wordle.Classes
             StreamReader sr = new StreamReader(Path);
             while (!sr.EndOfStream)
             {
-                string temp = sr.ReadLine().Trim();
+                string temp = sr.ReadLine().Trim().ToLower();
                 Words.Add(temp);
             }
 
