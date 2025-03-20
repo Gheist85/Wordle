@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
     public class Wordlist
     {
-        public List<String> Words;
-        public string Path;
+        [JsonPropertyName("Words")]
+        public List<String> Words { get; set; }
+        [JsonPropertyName("Path")]
+        public string Path { get; set; }
+
+        //Constructor for deserialization
+        public Wordlist()
+        { }
 
         //Constructor that uses a relative Path to the File
-        public Wordlist()
+        public Wordlist(int dummy)
         {
             Words = new List<String>();
             Path = "data\\words.txt";
@@ -36,7 +43,7 @@ namespace Wordle.Classes
             StreamReader sr = new StreamReader(Path);
             while (!sr.EndOfStream)
             {
-                string temp = sr.ReadLine().Trim().ToLower();
+                string temp = sr.ReadLine().Trim().ToUpper();
                 Words.Add(temp);
             }
 

@@ -17,26 +17,33 @@ namespace Wordle.Classes
 
         public void StartMenuLogic()
         {
-            pres.ShowMainMenu();
+           
             int select = 0;
             InputIntKeyGetter keyget = new InputIntKeyGetter();
-            select = keyget.GetIntFromKey();
-            switch (select)
+            
+
+            while (select != 4)
             {
-                case 1:
-                    SessionLogic(StartNewSession());
-                    break;
-                case 2:
-                    SessionLogic(LoadSession());
-                    break;
-                //case 3:
-                //    ShowHighscore();
-                case 4:
-                    Environment.Exit(0);
-                    break;
-                default:
-                    Environment.Exit(0);
-                    break;
+                pres.ShowMainMenu();
+                select = keyget.GetIntFromKey();
+                switch (select)
+                {
+                    case 1:
+                        SessionLogic(StartNewSession());
+                        break;
+                    case 2:
+                        SessionLogic(LoadSession());
+                        break;
+                    case 3:
+                        ShowHighscore();
+                        break;
+                    case 4:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Environment.Exit(0);
+                        break;
+                }
             }
         }
 
@@ -106,13 +113,33 @@ namespace Wordle.Classes
                 string path = Console.ReadLine();
                 try
                 {
-                     session = JsonSerializer.Deserialize<WordleSession>(path);
+                     StreamReader sr = new StreamReader(path);
+                     string jsonstring = sr.ReadToEnd();
+                     session = JsonSerializer.Deserialize<WordleSession>(jsonstring);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             return session;
+        }
+
+        public void ShowHighscore()
+        {
+            Console.Clear();
+            HighScore hs = new HighScore { HighscoreList = new List<HighscoreEntry>() };
+            string path = "data\\highscore";
+            string json = File.ReadAllText(path);
+            try
+            {
+                hs = JsonSerializer.Deserialize<HighScore>(json);
+            }
+            catch (Exception ex)
+            { }
+            Console.WriteLine(hs.ToString());
+            Console.WriteLine("\n\npress any key to go back to main menu");
+            Console.ReadKey(intercept: true);
+            Console.Clear();
         }
                 
 

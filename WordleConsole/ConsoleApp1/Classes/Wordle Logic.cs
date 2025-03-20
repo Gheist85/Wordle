@@ -25,32 +25,46 @@ namespace Wordle.Classes
         {   
             bool isword = true;
             CurrentTry = "";
-            while (CurrentTry.Length != CurrentWord.Length || !isword)
+            while (true)
             {
-                    CurrentTry = Get.GetInputString().ToLower();
-                    if (CurrentTry.Length != CurrentWord.Length)
-                    {
-                        Console.WriteLine($"Wrong input. Input must be a {CurrentWord.Length}-letter Word\nPlease Try again.");
-                        continue;
+                 CurrentTry = Get.GetInputString().ToUpper();
+                
+                if (!IsValidWord(CurrentTry, CurrentWord.Length))
+                    {                        
+                    continue;
                     }
-                isword = true;
-                foreach (char c in CurrentTry)
-                    {
-                        
-                        if (!char.IsLetter(c))
-                        {
-                            isword = false;
-                            Console.WriteLine("Wrong input. Word must be completely made of letters a-z\nPlease try again");
-                            break;
-                        }
-                    }
+
+
+                if (!Session.Dict.Words.Contains(CurrentTry, StringComparer.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Word not found in currently used Dictionary");
+                    continue;
+                }
+
+                break;
             }
 
 
         }
-           
-                
-        
+
+        private bool IsValidWord(string word, int length)
+        {
+            if (word.Length != length)
+            {
+                Console.WriteLine($"Wrong input. Input must be a {length}-letter Word\nPlease Try again.");
+                return false;
+            }
+            if (!word.All(char.IsLetter))
+            {
+                Console.WriteLine("Wrong input. Word must be completely made of letters a-z\nPlease try again");
+                return false;
+            }
+            return true;
+        }
+
+
+
+
 
         public void PickWordFromValidSelection()
         {

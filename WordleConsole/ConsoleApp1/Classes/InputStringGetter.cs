@@ -37,7 +37,7 @@ namespace Wordle.Classes
                 else
                 {
                     LastString = input;
-                    return input;
+                    return input.ToUpper();
                 }
 
             }

@@ -86,6 +86,7 @@ namespace Wordle.Classes
         {
             Console.Clear();
             Console.WriteLine("Your statistics:\n");
+            Console.WriteLine($"\tCurrent score: {session.Score} Pts.");
             int total = session.Solved.Words.Count + session.Fails.Words.Count;
             Console.WriteLine($"\tTotal tries: {total}\n");
             Console.WriteLine($"\tSuccessful tries: {session.Solved.Words.Count}\n");
@@ -100,6 +101,7 @@ namespace Wordle.Classes
 
         public void AskForDict()
         {
+            Console.Clear();
             Console.WriteLine("\t Please choose a Dictionary out of the following options:");
             Console.WriteLine("\t WARNING!!! Choosing anything but \"Exit to Menu\" will reset your current gamestate and wipe your statistics!\n\t So if you give a damn, return to menu and make a save first!");
             Console.WriteLine("\t 1 - Weird dictionary with 14k+ words including rare birds and plants and whatnot");
