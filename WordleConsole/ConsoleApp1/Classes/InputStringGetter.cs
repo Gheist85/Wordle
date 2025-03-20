@@ -30,6 +30,10 @@ namespace Wordle.Classes
                 {
                     throw new ArgumentException("Eingabe ist zu lang, bitte erneut versuchen");
                 }
+                else if (MaxLength != 0 && input.Length < MaxLength)
+                { 
+                    throw new ArgumentException("Eingabe ist zu kurz, bitte erneut versuchen");
+                }
                 else
                 {
                     LastString = input;

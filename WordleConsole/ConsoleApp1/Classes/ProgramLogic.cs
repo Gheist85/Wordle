@@ -42,33 +42,43 @@ namespace Wordle.Classes
 
         public void SessionLogic(WordleSession session)
         {
-            Console.Clear();
-            pres.ShowSessionMenu(session);
             int select = 0;
             InputIntKeyGetter keyget = new InputIntKeyGetter();
-            select = keyget.GetIntFromKey();
-            switch (select)
-            {
-                case 1:
-                    session.StartTry();
-                    SessionLogic(session);
-                    break;
 
-                case 2:
-                    session.SaveGame();
-                    SessionLogic(session);
-                    break;
-                case 3:
-                    session.ShowStats();
-                    SessionLogic(session);
-                    break;
-                case 4:
-                    StartMenuLogic();
-                    break;
-                default:
-                    StartMenuLogic();
-                    break;
-            }
+            do
+            {
+                Console.Clear();
+                pres.ShowSessionMenu(session);
+
+
+                select = keyget.GetIntFromKey();
+                switch (select)
+                {
+                    case 1:
+                        session.StartTry();
+                        
+                        break;
+
+                    case 2:
+                        session.SaveGame();
+                        
+                        break;
+                    case 3:
+                        session.ShowStats();
+                        
+                        break;
+                    case 4:
+                        pres.ShowRules();
+                       
+                        break;
+                    case 5:
+                        StartMenuLogic();
+                        return;
+                    default:
+                        StartMenuLogic();
+                        break;
+                }
+            } while(select != 5);
         }
 
 

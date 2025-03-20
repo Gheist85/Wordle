@@ -46,7 +46,7 @@ namespace Wordle.Classes
         {
             if (logic.CurrentWordMatches != null)
             {
-                Console.WriteLine("\tYour tries so far:");
+                Console.WriteLine("\tYour tries so far:\n");
                 for (int i = 0; i < logic.CurrentWordMatches.Count; i++)
                 DisplayGuess(logic.CurrentWordMatches[i]);
             }
@@ -54,15 +54,15 @@ namespace Wordle.Classes
 
         public void ShowSuccess(WordleLogic logic)
         {
-            Console.Clear();
-            Console.WriteLine("\t Congratulations! You guessed correctly");
+            Console.Clear();            
             DisplayAllGuesses(logic);
+            Console.WriteLine("\t Congratulations! You guessed correctly");
         }
 
         public void ShowFailure(WordleLogic logic)
         {
             Console.Clear();
-            Console.WriteLine("\t Close run thing! Maybe next time!\n");
+            Console.WriteLine("\tClose run thing! Maybe next time!\n");
             Console.WriteLine("\tThe correct guess would have been:");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("\t");
@@ -95,7 +95,7 @@ namespace Wordle.Classes
             double successrate = (double)session.Solved.Words.Count / (double)total * 100;
             Console.WriteLine($"\tSuccessrate: {successrate}%");
 
-            Console.WriteLine("press any key to go back to main menu");
+            Console.WriteLine("\n\npress any key to go back to main menu");
             Console.ReadKey(intercept: true);
             Console.Clear();
         }

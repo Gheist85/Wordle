@@ -22,9 +22,35 @@ namespace Wordle.Classes
         }
 
         public void AskForInput()
-        {
-            CurrentTry = Get.GetInputString().ToLower();
+        {   
+            bool isword = true;
+            CurrentTry = "";
+            while (CurrentTry.Length != CurrentWord.Length || !isword)
+            {
+                    CurrentTry = Get.GetInputString().ToLower();
+                    if (CurrentTry.Length != CurrentWord.Length)
+                    {
+                        Console.WriteLine($"Wrong input. Input must be a {CurrentWord.Length}-letter Word\nPlease Try again.");
+                        continue;
+                    }
+                isword = true;
+                foreach (char c in CurrentTry)
+                    {
+                        
+                        if (!char.IsLetter(c))
+                        {
+                            isword = false;
+                            Console.WriteLine("Wrong input. Word must be completely made of letters a-z\nPlease try again");
+                            break;
+                        }
+                    }
+            }
+
+
         }
+           
+                
+        
 
         public void PickWordFromValidSelection()
         {
