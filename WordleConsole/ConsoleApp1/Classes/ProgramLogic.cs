@@ -69,16 +69,22 @@ namespace Wordle.Classes
                         break;
                     case 4:
                         pres.ShowRules();
-                       
                         break;
-                    case 5:
+                       case 5:
+
+                        session.SetDifficulty();
+                        break;
+                    case 6:
+                        session.ChooseDict();
+                        break;
+                    case 7:
                         StartMenuLogic();
                         return;
                     default:
                         StartMenuLogic();
                         break;
                 }
-            } while(select != 5);
+            } while(select != 7);
         }
 
 
@@ -87,6 +93,7 @@ namespace Wordle.Classes
             Console.Clear();
             Console.WriteLine("Please type your name");
             WordleSession session = new WordleSession(Console.ReadLine());
+            
             return session;
         }
         

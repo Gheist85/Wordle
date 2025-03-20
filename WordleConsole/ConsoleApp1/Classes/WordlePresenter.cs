@@ -61,7 +61,9 @@ namespace Wordle.Classes
 
         public void ShowFailure(WordleLogic logic)
         {
-            Console.Clear();
+            Console.Clear();        
+                          
+            DisplayAllGuesses(logic);
             Console.WriteLine("\tClose run thing! Maybe next time!\n");
             Console.WriteLine("\tThe correct guess would have been:");
             Console.ForegroundColor = ConsoleColor.Green;
@@ -71,16 +73,12 @@ namespace Wordle.Classes
                 Console.Write(c + " ");
             }
             Console.WriteLine();
-            Console.ForegroundColor= ConsoleColor.White;
-                          
-
-
-            DisplayAllGuesses(logic);
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         public void AnyKey()
         {
-            Console.WriteLine("Please press any Key to Continue.");
+            Console.WriteLine("\n\n\nPlease press any Key to Continue.");
             Console.ReadKey();
         }
 
@@ -99,5 +97,17 @@ namespace Wordle.Classes
             Console.ReadKey(intercept: true);
             Console.Clear();
         }
-    }
+
+        public void AskForDict()
+        {
+            Console.WriteLine("\t Please choose a Dictionary out of the following options:");
+            Console.WriteLine("\t WARNING!!! Choosing anything but \"Exit to Menu\" will reset your current gamestate and wipe your statistics!\n\t So if you give a damn, return to menu and make a save first!");
+            Console.WriteLine("\t 1 - Weird dictionary with 14k+ words including rare birds and plants and whatnot");
+            Console.WriteLine("\t 2 - More run of the mill dictionary with ~3k Words. Kinda boring really");
+            Console.WriteLine("\t 3 - Exit to Menu");
+        }
+
+
+
+        }
 }

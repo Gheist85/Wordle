@@ -3,13 +3,14 @@ using Wordle.Classes;
 // TO do
 // Save Funktion mit Deserializer
 // Abfangen aller fehlerhaften eingaben --> bei Wordeingabe ja, bei Save Function muss nacher geschaut werden wenn es die gibt
-// Funktion jederzeit abbrechen
+// Funktion jederzeit abbrechen hinzufügen
 // HighScore mit eigenem Log
-
+// Make sure the Data Transfers correctly from GitHub
 // Keyboard view
-// Difficulty Setting
+// Compare Funktion beim Eingabevergleich
+
 // size of of Window and Screen
-// Different Dictionarys
+
 // LAdefunktion für Wortlisten
 ProgramLogic programLogic = new ProgramLogic();
 programLogic.StartMenuLogic();

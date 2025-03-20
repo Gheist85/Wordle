@@ -29,7 +29,9 @@ namespace Wordle.Classes
             Console.WriteLine("(2)\t Save Session");
             Console.WriteLine("(3)\t Show your stats");
             Console.WriteLine("(4)\t View the rules");
-            Console.WriteLine("(5)\t End Session");
+            Console.WriteLine("(5)\t Set the difficulty");
+            Console.WriteLine("(6)\t Choose Dictionary");
+            Console.WriteLine("(7)\t End Session");
         }
 
         public void ShowRules()

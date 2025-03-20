@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
+    
     public class WordleSession
     {
         public string PlayerName { get; set; }
@@ -24,8 +25,24 @@ namespace Wordle.Classes
             Solved = new Wordlist ();
             Difficulty = 5;
         }
-        public void SetDifficulty(int difficulty)
-        { this.Difficulty = difficulty; }
+        public void SetDifficulty()
+
+        {
+            InputIntKeyGetter inget = new InputIntKeyGetter();
+            int value = 0;
+            Console.WriteLine("Please Type in how many tries you want to guess a word.\nStandard difficulty is 5, you can choose a value between 3-7");
+            while (value < 3 || value > 7)
+            {
+               
+                value = inget.GetIntFromKey();
+                if (value < 3 || value > 7)
+                {
+                    Console.WriteLine("Wrong Input, please choose a value between 3 and 7");
+                }
+
+            }
+            this.Difficulty = value;
+        }
 
         public void StartTry()
         {
@@ -80,6 +97,35 @@ namespace Wordle.Classes
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public void ChooseDict()
+        {
+            WordlePresenter presenter = new WordlePresenter();
+            InputIntKeyGetter intKeyGetter = new InputIntKeyGetter();
+            presenter.AskForDict();
+            int value = intKeyGetter.GetIntFromKey();
+            switch (value)
+            {
+                case 1:
+                    this.Dict.Path = "data\\words.txt";
+                    this.Fails = new Wordlist();
+                    this.Solved = new Wordlist();
+                    this.Dict.ReadListFromFile();
+                    break;
+                case 2:
+                    this.Dict.Path = "data\\words2.txt";
+                    this.Fails = new Wordlist();
+                    this.Solved = new Wordlist();
+                    this.Dict.ReadListFromFile();
+                    break;
+                case 3:
+                    break;
+                    default:
+                    break;
+            }
+
+        }
+
 
         public void ShowStats()
         {
