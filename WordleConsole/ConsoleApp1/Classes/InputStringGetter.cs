@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
+    //Getter for strings, designed with length value. This is probably largely unnecessary as it never gets used with the length, but has practice purposes.
     internal class InputStringGetter
     {
         public string LastString { get; set; }
@@ -28,11 +29,11 @@ namespace Wordle.Classes
             {
                 if (MaxLength != 0 && input.Length > MaxLength)
                 {
-                    throw new ArgumentException("Eingabe ist zu lang, bitte erneut versuchen");
+                    throw new ArgumentException("Input to long, please try again");
                 }
                 else if (MaxLength != 0 && input.Length < MaxLength)
                 { 
-                    throw new ArgumentException("Eingabe ist zu kurz, bitte erneut versuchen");
+                    throw new ArgumentException("Input too short, please try again");
                 }
                 else
                 {
@@ -42,7 +43,7 @@ namespace Wordle.Classes
 
             }
             else
-            { throw new ArgumentException("Eingabe darf nicht leer sein"); }
+            { throw new ArgumentException("Input can't be empty!"); }
         }
             
 

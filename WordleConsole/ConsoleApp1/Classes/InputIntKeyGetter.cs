@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
+    // Input Getter for single Digit int inputs
     internal class InputIntKeyGetter
     {
         public int GetIntFromKey()

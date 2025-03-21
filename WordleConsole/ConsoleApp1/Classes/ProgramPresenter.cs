@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
+    // PresenterClass for Main Menu, Session Menu and Rules. Just Contains Methods generate static Console Output
     public class ProgramPresenter
     {
         public void ShowMainMenu()

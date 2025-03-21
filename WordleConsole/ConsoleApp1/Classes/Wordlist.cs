@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
+    // Class used to save all Dictionaries as well as the Solved and Failed Attributes from each player session. 
     public class Wordlist
     {
         [JsonPropertyName("Words")]
@@ -18,7 +19,7 @@ namespace Wordle.Classes
         public Wordlist()
         { }
 
-        //Constructor that uses a relative Path to the File
+        //Constructor that uses a relative Path to the File -- the int is awkward right now, but in that moment i had my attention on something else, will probably fix this in the future
         public Wordlist(int dummy)
         {
             Words = new List<String>();

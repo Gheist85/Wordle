@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wordle.Classes
 {
+    //Match Pair class. Basically used like a two dimensional array during the rest of the code. To connect words to solution patterns and save them
     public  class MatchPair
     {
         public string Guess;

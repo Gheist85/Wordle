@@ -6,15 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Wordle.Classes
-{
+{   
+    //Presenter class to divide the actual Logic from pure Output. Contains purely  static Output used by other classes unless specifically marked
     internal class WordlePresenter
     {
         public void AskForGuess()
-        {
-            
+        {            
             Console.WriteLine("\n\tPlease Type your Next Guess");
         }
 
+        // Method that generates the in game output of a made guess
         public void DisplayGuess(MatchPair matchPair)
         {
             for (int i = 0; i < matchPair.Guess.Length;  i++)
@@ -42,6 +43,7 @@ namespace Wordle.Classes
 
         }
 
+        // Method to summarily display all made guesses during a try
         public void DisplayAllGuesses(WordleLogic logic)
         {
             if (logic.CurrentWordMatches != null)
@@ -52,6 +54,7 @@ namespace Wordle.Classes
             }
         }
 
+        //success display
         public void ShowSuccess(WordleLogic logic)
         {
             Console.Clear();            
@@ -59,6 +62,7 @@ namespace Wordle.Classes
             Console.WriteLine("\t Congratulations! You guessed correctly");
         }
 
+        //failure display
         public void ShowFailure(WordleLogic logic)
         {
             Console.Clear();        
@@ -79,9 +83,10 @@ namespace Wordle.Classes
         public void AnyKey()
         {
             Console.WriteLine("\n\n\nPlease press any Key to Continue.");
-            Console.ReadKey();
+            Console.ReadKey(true);
         }
 
+        // Method to display statistics, some super basic Math included
         public void Statistics(WordleSession session)
         {
             Console.Clear();
