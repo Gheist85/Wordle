@@ -71,7 +71,9 @@ namespace Wordle.Classes
             logic.PickWordFromValidSelection();
             while (!logic.MatchesWord() && counter < Difficulty)
             {
-
+                Console.Clear();
+                if (counter != 0)
+                { presenter.DisplayAllGuesses(logic); }
                 presenter.AskForGuess();
                 logic.AskForInput();
                 logic.CompareTryToWord();
@@ -111,7 +113,6 @@ namespace Wordle.Classes
             JsonSerializerOptions options = new JsonSerializerOptions { WriteIndented = true };
             string jsonsession = JsonSerializer.Serialize<WordleSession>(this, options);
             if (Directory.Exists(directoryPath))
-
             {
                 try
                 {
@@ -249,4 +250,4 @@ namespace Wordle.Classes
         }
     }
 
-    }
+ }

@@ -8,6 +8,7 @@ using System.Xml;
 
 namespace Wordle.Classes
 {
+    //HighScoreclass and HighscoreEntryclass to have control over json-serialization
     public class HighScore
     {
         [JsonPropertyName("HighscoreList")]
